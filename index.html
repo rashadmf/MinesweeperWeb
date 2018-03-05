@@ -1,0 +1,50 @@
+<!--
+	Minesweeper
+	
+	Rules: 	Numbers indicate the amount of bombs surrounding each tile.  
+			Reveal every tile that doesn't contain a bomb!
+			
+	Easy: 	6x6 Board 		10 mines
+	Medium: 16x16 Board 	40 mines
+	Hard: 	30x16 Board 	99 mines 
+	
+	Have Fun!
+		-->
+<!DOCTYPE html>
+<html>
+    <head>
+    
+        <title>Minesweeper</title>
+
+        <link type="text/css" rel="stylesheet" href="./css/style.css" />
+        <script type="text/javascript" src="js/minesweeper.js" ></script>
+
+    </head>
+	
+    <body>
+		<!-- Contains game interface -->
+		<div id="wrapper">
+        <h1> Minesweeper </h1>
+		<!-- Contains game information -->
+        <div id="menu">
+			<!-- Difficulty selector -->
+            <select id="difficulty" onchange="setDifficulty();">
+               <option value="0">Easy</option>
+               <option value="1">Medium</option>
+               <option value="2">Hard</option>
+            </select>
+            <span>&nbsp;|&nbsp;</span>
+            <span id="score" >Remaining Mines:</span>
+            <span id="flagCount" > </span>
+            <span>&nbsp;|&nbsp;</span>
+            <span>Time:</span>
+            <span id="timer" > </span>
+        </div>
+		<!-- Smiley selector -->
+        <div id="smiley" class="smiley" onmousedown="smileyDown();" onmouseup="smileyUp();" onclick="startGame();"></div>
+        <!-- Game board -->
+        <div id="minefield"></div>
+		<script>startGame();</script>
+		</div>
+    </body>
+</html>
