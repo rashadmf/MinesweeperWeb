@@ -6,12 +6,22 @@ body {
 	height: 100%;
 	background-color: #006600;
 }
+
+select {
+	width: 120px;
+}
+
 div {
     margin:auto;
     text-align: center;
 }
+
+div#timer {
+	width: 70px;
+	display: inline-block;
+}
+
 #wrapper {
-	
 	width: 700px;
 	height: 600px;
 	background-color: blue;
@@ -25,8 +35,8 @@ div {
 #menu {
 	padding: 10px;
 	padding-bottom: 30px;
-	margin-left:100px;
-	margin-right: 100px;
+	margin-left: 0px;
+	margin-right: 0px;
 	
 	
 }
